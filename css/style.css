@@ -1,0 +1,99 @@
+:root{
+  --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
+}
+html{
+  font-family: 'Raleway', sans-serif;
+}
+/* -------------------- UTILITIES -------------------- */
+.l-12{
+  font-size: 12px;
+}
+/* -------------------- ESTILOS PROPIOS -------------------- */
+body{
+  background-image: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+}
+.header-main{
+  position: relative;
+  height: 9rem;
+}
+main > .container{
+  background-color: white;
+  border-radius: 20px;
+}
+.header-main > img:first-of-type{
+  position: absolute;
+  top: -5rem;
+  left: 1rem;
+  width: 80%;
+}
+.header-main > img:last-of-type{
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  width: 80%;
+}
+/* -------------------- MENU OPCIONES -------------------- */
+.option{
+  padding: .5rem 0;
+  border-bottom: thin solid var(--light-grayish-blue);
+}
+.option-title{
+  display: flex;
+  justify-content: space-between;
+}
+.mostrarOp{
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+/* -------------------- ATTRIBUTION -------------------- */
+.attribution{
+  background-color: var(--very-dark-desaturated-blue);
+}
+
+@media screen and (min-width: 36rem){
+  body{
+    height: calc(100vh - 5rem);
+  }
+  .main-text > .container{
+    max-width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main > .container{
+    display: grid;
+    width: 60%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+  }
+  .header-main{
+    grid-row: span 2;
+  }
+  .attribution{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .header-main > img:first-of-type{
+    top: 2rem;
+    left: -5rem;
+    width: 100%;
+  }
+  .header-main > img:last-of-type{
+    top: -2rem;
+    left: -4rem;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 64rem){
+  main > .container{
+    height: 30vw;
+  }
+}

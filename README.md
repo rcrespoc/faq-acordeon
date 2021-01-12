@@ -1,5 +1,7 @@
 # Frontend Mentor - FAQ Accordion Card
 
+[Revisar sitio web](https://rcrespoc.github.io/faq-acordeon/)
+
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
